@@ -8,7 +8,7 @@ use Http\Adapter\Guzzle6\Client;
 if ($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
 
 	// Get rid of silly extra stuff people type in to things
-	$adminEmail = trim(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL));
+	$adminEmail = trim(filter_input(INPUT_POST, 'adminEmail', FILTER_SANITIZE_EMAIL));
 	$name = trim(filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING));
 	$email = trim(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL));
 	$message = trim(filter_input(INPUT_POST, 'message', FILTER_SANITIZE_SPECIAL_CHARS));
