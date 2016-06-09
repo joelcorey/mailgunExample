@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mailgun Integration Example</title>
+
+</head>
+<body>
+
+This is a simple example of how to use Mailgun with PHP. It assumes you have a Mailgun account and API key. As well as two emails with which to test sending email messages. So the admin email is an email where you would get notified that a potential customer emailed you at. Everything labelled 'customer' is to be treated as though a seperate person with a seperate email, as in a customer.
+
+<hr>
+
+	<div>
+		<form id="contact-form" method="post" action="contact/contact.php">
+			<div>
+				<span>
+					<i></i>
+				</span>
+				<input id="adminemail" type="email" name="adminemail" placeholder="Admin email">
+			</div>
+
+			<hr>
+
+			<div>
+				<span>
+					<i></i>
+				</span>
+				<input id="name" type="text" name="name" placeholder="Customer name">
+			</div>
+
+			<div>
+				<span>
+					<i></i>
+				</span>
+				<input id="email" type="email" name="email" placeholder="Customer Email">
+			</div>
+
+			<div>
+				<span>
+					<i></i>
+				</span>
+				<textarea id="message" name="message" cols="30" rows="4" placeholder="Customer Message"></textarea>
+			</div>
+
+			<button type="submit">
+				<span></span>
+				Send Message
+			</button>
+		</form>
+		<div><p></p></div>
+	</div>
+			
+</body>
+</html>

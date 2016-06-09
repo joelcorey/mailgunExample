@@ -1,0 +1,9 @@
+{
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+    "require": {
+        "mailgun/mailgun-php": "^2.0",
+		"guzzlehttp/guzzle": "~6.0",
+		"php-http/guzzle6-adapter": "^1.1"
+    }
+}
